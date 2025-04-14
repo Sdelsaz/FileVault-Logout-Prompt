@@ -6,7 +6,7 @@ This script uses Bart Reardon's swiftDialog for user dialogs
 
 https://github.com/bartreardon/swiftDialog
 
-The script will perform a few checks and ask the user to log out to enable FileVault if needed when a Configuration Profile to enforce FileVault Disk Encription and escrow the Rceovery key to Jamf Pro has been installed on their computer. The sxipt does the following:
+The script will perform a few checks and ask the user to log out to enable FileVault if needed when a Configuration Profile to enforce FileVault Disk Encription and escrow the Rceovery key to Jamf Pro has been installed on their computer. The script does the following:
 
 - Checks if Recovery Key Escrow settings are present.  If not it exits.
 - Checks if FileVault is enabled.  If it is, it exits.
