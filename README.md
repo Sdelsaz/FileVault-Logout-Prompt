@@ -13,7 +13,7 @@ The script will perform a few checks and ask the user to log out to enable FileV
 - Checks if a user is logged in. If not, it exits.
 - Checks if Swift Dialog is installed. If not, it installs it.
 - Prompts the user to log out.
-- If the user selects to log out, a confirmatiuon prompt is displayed with a time out to make suer any unsaved work is saved.
+- If the user selects to log out, a confirmatiuon prompt is displayed with a time out to make sure any unsaved work is saved.
 - If the User clicks on " Log Out Now" or the timeout expires, the current user is logged out.
 
 The name of the organization can be set on line 34 of the script.
