@@ -31,7 +31,7 @@
 ##########################################################################################
 # Variables
 User=$(/bin/ls -l /dev/console | /usr/bin/awk '{ print $3 }')
-Org="Example Inc."
+Org="Your organisation"
 Icon="/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/FileVaultIcon.icns"
 Banner="https://support.apple.com/content/dam/edam/applecare/images/en_US/psp/psp_heroes/psp-hero-banner-macos.image.large_2x.jpg"
 Title="FileVault Disk Encryption"
