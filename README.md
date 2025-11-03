@@ -15,8 +15,7 @@ The script will perform a few checks and ask the user to log out to enable FileV
 - Prompts the user to log out.
 - If the user selects to log out, a confirmatiuon prompt is displayed with a time out to make sure any unsaved work is saved.
 - If the User clicks on " Log Out Now" or the timeout expires, the current user is logged out.
-
-The name of the organization can be set on line 34 of the script.
+- Parameter $4 can be used to set the organisation name.
 
 <img width="727" alt="Screenshot 2025-04-14 at 22 51 26" src="https://github.com/Sdelsaz/FileVault-Logout-Prompt/blob/main/Screenshot%201.png" />
 <img width="727" alt="Screenshot 2025-04-14 at 22 51 39" src="https://github.com/Sdelsaz/FileVault-Logout-Prompt/blob/main/Screenshot%202.png" />
