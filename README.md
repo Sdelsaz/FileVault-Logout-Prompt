@@ -1,4 +1,4 @@
-**FileVault Logout Prompt**
+*FileVault Logout Prompt*
 
 This script will prompt users to logout in order to enable Filevault on computers managed by Jamf Pro. 
 
