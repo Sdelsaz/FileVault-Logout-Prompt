@@ -31,7 +31,11 @@
 ##########################################################################################
 # Variables
 User=$(/bin/ls -l /dev/console | /usr/bin/awk '{ print $3 }')
-Org="Example Inc."
+if [ -z "$4" ]; then
+	OrgName="your organisation"	
+else
+	OrgName="$4"
+fi
 Icon="/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/FileVaultIcon.icns"
 Banner="https://support.apple.com/content/dam/edam/applecare/images/en_US/psp/psp_heroes/psp-hero-banner-macos.image.large_2x.jpg"
 Title="FileVault Disk Encryption"
@@ -39,7 +43,7 @@ Font="size=15,name=Apple SD Gothic Neo"
 TitleFont="font=$Font,shadow=1"
 LogoutPrompt()
 {
-	dialog -s --title "$Title" --titlefont "$TitleFont" --message "Please log out and back in to enable FileVault Disk Encryption. FileVault Disk Encryption is required by **$Org** to ensure the security and compliance of your Mac. 
+	dialog -s --title "$Title" --titlefont "$TitleFont" --message "Please log out and back in to enable FileVault Disk Encryption. FileVault Disk Encryption is required by **$OrgName** to ensure the security and compliance of your Mac. 
 
 **IMPORTANT**: After clicking on 'Log Out Now' you will be logged out automatically. Please make sure to save any unsaved work before proceeding." --icon "$Icon" --overlayicon "caution" --messagefont "$Font" --button1text "Log Out Now" --button2text "Later" 
 }
